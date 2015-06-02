@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<!--[if lt IE 7 ]><html class="ie ie6" lang="en"> <![endif]-->
+<!--[if IE 7 ]><html class="ie ie7" lang="en"> <![endif]-->
+<!--[if IE 8 ]><html class="ie ie8" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!--><html lang="en"> <!--<![endif]-->
+  <head>
+    <title>
+      <% if @item[:title] %>
+        <%= @item[:title] %> :: Tautology Arts Collective
+      <% else %>
+        Tautology Arts Collective
+      <% end %>
+    </title>
+
+    <!-- Meta -->
+		<meta charset="UTF-8">
+		<meta http-equiv="Content-Language" content="en" />
+    <meta name="description" content="<%= @item[:title] %>" />
+    <meta name="author" content="Danne Stayskal">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" type="text/css" href="/stylesheets/skeleton.css" />
+    <link rel="stylesheet" type="text/css" href="/stylesheets/layout.css" />
+    <link rel="stylesheet" type="text/css" href="/stylesheets/lightbox.css" />
+
+    <!-- Shims -->
+    <!--[if lt IE 9]>
+      <script src="/javascript/html5shim.js"></script>
+    <![endif]-->
+
+    <!-- Icons -->
+    <link rel="shortcut icon" href="/images/favicon.ico" />
+    <link rel="apple-touch-icon" href="/images/tautology-icon-114x114.png" />
+    <link rel="apple-touch-icon" sizes="72x72" href="/images/tautology-icon-72x72.png" />
+    <link rel="apple-touch-icon" sizes="114x114" href="/images/tautology-icon-114x114.png" />
+
+    <!-- JavaScripts -->
+    <script src="/javascript/jquery-1.7.2.min.js"></script>
+    <script src="/javascript/lightbox.js"></script>
+
+  </head>
+  <body>
+    <div class="container">
+
+      <nav class="clearfix">
+        <a href="/" style="padding-left: 30px;">Tautology Arts Collective</a>
+        <a href="/art/">Art</a>
+        <a href="/music/">Music</a>
+        <a href="/code/">Code</a>
+      </nav>
+
+      <% if @item[:title] %>
+      <header class="site clearfix">
+        <h1><%= @item[:title] %></h1>
+      </header>
+      <% end %>
+
+      <div class="clearfix">
+      <%= yield %>
+      </div>
+
+      <h2 class="summary">What we do</h2>
+
+      <div class="clearfix">
+        <div class="small one-third intro column">
+          <h2>Art</h2>
+          <p>We build <em><a href="/art/">art installations</a></em> for <a href="http://burningman.org/">Burning Man</a>, <a href="http://www.criticalnw.org/">Critical Northwest</a> and other regional festivals.</p>
+        </div>
+        <div class="small one-third intro column">
+          <h2>Music</h2>
+          <p>We also produce and DJ <em><a href="/music/">electronic dance music</a></em>, playing in Seattle and throughout Cascadia.</p>
+        </div>
+        <div class="small one-third intro column">
+          <h2>Code</h2>
+          <p>Many of our builds require <em><a href="/code/">software</a></em> to run lights, sensors, and sound. Most of that software is open source.</p>
+        </div>
+      </div>
+
+      <footer class="clearfix">
+
+        <p style="padding-top: 10px">
+					Copyright &copy; 2015 Tautology Arts Collective. Unless otherwise noted, this content is available freely through the Creative Commons <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/us/">BY-NC-SA 3.0</a> license.
+          <a href="http://github.com/tautology-art/portfolio">This site is open source</a>.
+        </p>
+        <!--
+        <rdf:RDF xmlns="http://creativecommons.org/ns#"
+         xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+              <License rdf:about="http://creativecommons.org/licenses/by-nc-sa/3.0/us/">
+                <permits rdf:resource="http://creativecommons.org/ns#Reproduction"/>
+                <permits rdf:resource="http://creativecommons.org/ns#Distribution"/>
+                <requires rdf:resource="http://creativecommons.org/ns#Notice"/>
+                <requires rdf:resource="http://creativecommons.org/ns#Attribution"/>
+                <prohibits rdf:resource="http://creativecommons.org/ns#CommercialUse"/>
+                <permits rdf:resource="http://creativecommons.org/ns#DerivativeWorks"/>
+                <requires rdf:resource="http://creativecommons.org/ns#ShareAlike"/>
+              </License>
+            </rdf:RDF>
+         -->
+
+        <p style="padding-top: 10px">
+          <a href="mailto:contact@tautology.io" rel="me">contact@tautology.io</a>
+        </p>
+
+        <p style="padding-top: 32px">
+          <a href="/identity/">
+          <img src="/images/tautology-logo-small.png" alt="⊨" />
+          </a>
+        </p>
+
+      </footer>
+
+    </div>
+
+  </body>
+</html>

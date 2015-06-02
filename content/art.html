@@ -1,0 +1,13 @@
+---
+title: Art
+---
+
+<% @item.children.sort{|a,b| a.attributes[:title] <=> b.attributes[:title]}.each do |page| %>
+  <h4 style="font-size: 12pt;"><a href="<%= page.identifier %>"><%= page.attributes[:title] %></a></h4>
+  <p>
+    <%= page.attributes[:intro] %>
+    <hr />
+  </p>
+<% end %>
+
+

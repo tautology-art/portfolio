@@ -1,0 +1,9 @@
+---
+title: What's happening
+---
+
+<% items.select{|i| i.identifier =~ /\/blog\/.+/}.sort{|a,b| b.attributes[:date] <=> a.attributes[:date]}.each do |post| %>
+  <h2 style="font-size: 12pt;"><a href="<%= post.identifier %>"><%= post.attributes[:title] %></a></h2>
+  <p><%= post.attributes[:intro] %></p>
+  <p><a href="<%= post.identifier %>">Read more&hellip;</a></p>
+<% end %>
