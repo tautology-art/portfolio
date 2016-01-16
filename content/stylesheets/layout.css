@@ -327,3 +327,8 @@ h2.summary                                      { border-bottom: 4px solid #AAA;
     # Nectarine:          #F68D51 ;
 */
 
+img.equalmarginblock {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
