@@ -17,11 +17,11 @@ Zeroth, install prerequisites:
 
 First, clone this codebase
 
-	$ git clone git@github.com/tautology-art/tautology.io
+	$ git clone git@github.com:tautology-art/tautology.io
 
-Second, accept the RVM version and gemset, building Ruby 1.9.2 if you need
+Second, accept the RVM version and gemset, building Ruby 1.9.3 if you need
 
-	$ rvm install ruby-1.9.2-p180
+	$ rvm install ruby-1.9.3-p551
 
 Finally, install Bundler and the rest of the gemset
 
