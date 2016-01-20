@@ -19,9 +19,9 @@ First, clone this codebase
 
 	$ git clone git@github.com:tautology-art/tautology.io
 
-Second, accept the RVM version and gemset, building Ruby 1.9.3 if you need
+Second, accept the RVM version and gemset, building Ruby 2.2.2 if you need
 
-	$ rvm install ruby-1.9.3-p551
+	$ rvm install ruby-2.2.2
 
 Finally, install Bundler and the rest of the gemset
 
