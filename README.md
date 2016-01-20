@@ -51,4 +51,4 @@ Easy as pie.
 Credits
 -------
 
-Unless otherwise noted, all content on this site is © 2015 Tautology Arts Collective and available to you under the [Creative Commons BY-NC-SA 3.0](http://creativecommons.org/licenses/by-nc-sa/3.0/us/) license. All exceptions to this license are noted in [the colophon for this site](https://github.com/linenoise/portfolio/blob/master/content/colophon.html)
+Unless otherwise noted, all content on this site is © 2016 Tautology Arts Collective and available to you under the [Creative Commons BY-NC-SA 3.0](http://creativecommons.org/licenses/by-nc-sa/3.0/us/) license. All exceptions to this license are noted in [the colophon for this site](https://github.com/linenoise/portfolio/blob/master/content/colophon.html)
